@@ -26,36 +26,5 @@
   <button type="submit">Versturen</button>
 </form>
 
-<script>
-document.getElementById("rsvpForm").addEventListener("submit", async function(e){
-  e.preventDefault(); // stopt normale submit
-
-  const formData = new FormData(this);
-  const obj = Object.fromEntries(formData.entries());
-
-  try {
-    const res = await fetch("https://script.google.com/macros/s/AKfycbyQkskElhM8s0QxGBbyqqTF1NRM_Yzi8LFQfEXgA04C6Qvn2uwbWwXemcywtyz_iC7l/exec", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(obj)
-    });
-
-    // Optioneel, check status
-    if(res.ok){
-      alert("Bedankt voor je RSVP!");
-      this.reset();
-    } else {
-      alert("Er is iets misgegaan, probeer het opnieuw.");
-    }
-
-  } catch(err){
-    console.error(err);
-    alert("Er is iets misgegaan, controleer je internetverbinding.");
-  }
-});
-</script>
-
 </body>
 </html>
