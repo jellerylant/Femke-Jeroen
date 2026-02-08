@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>RSVP</title>
+</head>
+<body>
+
+<h1>RSVP</h1>
+
+<form id="rsvpForm">
+  <input name="naam" required placeholder="Naam">
+  <input name="email" required placeholder="Email">
+
+  <select name="aanwezig" required>
+    <option value="">Kom je?</option>
+    <option value="Ja">Ja</option>
+    <option value="Nee">Nee</option>
+  </select>
+
+  <input name="aantal" type="number" min="1" placeholder="Aantal personen">
+  <input name="plusone" placeholder="Naam plus-one">
+  <input name="dieet" placeholder="Dieetwensen">
+  <textarea name="opmerking" placeholder="Opmerkingen"></textarea>
+
+  <button type="submit">Versturen</button>
+</form>
+
+<script>
+document.getElementById("rsvpForm").addEventListener("submit", async function(e){
+  e.preventDefault(); // stopt normale submit
+
+  const formData = new FormData(this);
+  const obj = Object.fromEntries(formData.entries());
+
+  try {
+    const res = await fetch("https://script.google.com/macros/s/AKfycbyQkskElhM8s0QxGBbyqqTF1NRM_Yzi8LFQfEXgA04C6Qvn2uwbWwXemcywtyz_iC7l/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(obj)
+    });
+
+    // Optioneel, check status
+    if(res.ok){
+      alert("Bedankt voor je RSVP!");
+      this.reset();
+    } else {
+      alert("Er is iets misgegaan, probeer het opnieuw.");
+    }
+
+  } catch(err){
+    console.error(err);
+    alert("Er is iets misgegaan, controleer je internetverbinding.");
+  }
+});
+</script>
+
+</body>
+</html>
