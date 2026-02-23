@@ -797,11 +797,828 @@ textarea {
   width: 100%;
   text-align: left;
 }
-/* FAQ correct schalen */
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+
+
+@font-face {
+  font-family: vogue; /* set name */
+  src: url(/FONTS/Classyvogueregular.ttf); /* url of the font */
+}
+@font-face {
+  font-family: holy; /* set name */
+  src: url(/FONTS/HolymoreDemo-8MynJ.otf); /* url of the font */
+}
+@font-face {
+  font-family: symphony; /* set name */
+  src: url(/FONTS/symphony-pro-regular.otf) /* url of the font */
+}
+@font-face {
+  font-family: medio; /* set name */
+  src: url(/FONTS/medio.otf); /* url of the font */
+}
+
+@font-face {
+  font-family: champagne; /* set name */
+  src: url(/FONTS/Champagne\ &\ Limousines.ttf); /* url of the font */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#span3{
+width: 20%;
+position: absolute;
+float: left;
+
+
+}
+#datum{
+   margin-top: 1%;
+   color: antiquewhite; 
+   font-family: medio;
+   text-align: center;
+   padding-bottom: 10%;
+   font-size: 3em;
+   line-height: 0.8;
+   margin-left: 24.50%;
+   float: left;
+
+   
+}
+
+
+
+  /* Style the header with a grey background and some padding */
+.header {margin-top: 1.5%;
+    width: 100%;
+  float: left;
+  margin-left: 2.5%;
+ 
+  margin-left: 100%;
+  
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: antiquewhite;
+  text-align: left;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  padding-left: 20%;
+  line-height: 25px;
+  border-radius: 4px;
+  font-family: medio;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+/* Change the background color on mouse-over */
+/* Float the link section to the right */
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+
+
+
+.hover-underline {
+  color: antiquewhite;
+  position: relative;
+  display: inline-block;
+  padding: 10%;
+  padding-top: 14%;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, antiquewhite);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+  transform: scaleX(1);
+}
+
+#titel {
+    float: left;
+    width: 100%;
+  position: relative;
+  margin-top: 60%;
+  color: antiquewhite;
+  font-size: 3em; /* 300% → 3em */
+  text-align: center; /* horizontaal centreren */
+  line-height: 0.4; /* iets meer leesbaar */
+  margin: 0 auto; /* werkt bij block elementen */
+  padding-bottom: 10%;
+}
+
+#p1{
+font-family: symphony;
+font-size: 150%;
+padding-bottom: 2.5%;
+}
+
+a{
+    font-size: 400%;
+}
+
+
+body {
+    font-family: vogue;
+    background: #636B2F;
+    height: 100vh;
+  }
+.block1{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 4em;
+    padding-left: 0%;
+    background-color: #636B2F;
+    width: 100%;
+    float: left;
+    font-family: medio;
+    margin-top: 10%;
+}
+  #quiz-container {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 10% 0%;
+    border-radius: 10px;
+
+    
+  }
+label{
+text-align: center;
+font-size: 1em;
+padding-bottom: 2%;
+
+
+}
+
+.uitleg{
+  text-align: left;
+font-size: 0.7em;
+width: 70%;
+padding: 2%;
+padding-top: 1%;
+padding-left: 0%;
+}
+
+.uitleg2{
+  text-align: left;
+font-size: 0.7em;
+width: 70%;
+padding: 2%;
+padding-top: 1%;
+padding-left: 0%;
+}
+.form{
+    font-family: champagne;
+    text-align: left;
+    font-size: 0.4em;
+    float: left;
+    width: 100%;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    
+}
+
+.form2{
+  font-family: champagne;
+  text-align: left;
+  font-size: 0.4em;
+  float: left;
+  width: 100%;
+  margin-top: 4%;
+  padding-bottom: 2%;
+  
+}
+
+
+
+
+form br{
+padding-top: 6%;
+float: left;
+
+}
+#deel1{
+    margin-top: 5%;
+float: left;
+width: 40%;
+margin-left: 20%;
+
+}
+
+#deel2{
+    margin-top: 5%;
+float: left;
+width: 40%;
+
+}
+input[type="text"]{
+    width: 40%;
+    margin-top: 1%;
+    height: 3em;
+    padding-right: 10%;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+input[type="email"]{
+    width: 40%;
+    margin-top: 2%;
+    height: 3em;
+    padding-right: 10%;
+    font-size: 0.5em;
+    text-align: left;
+}
+
+textarea{
+    width: 40%;
+    margin-top: 2%;
+    height: 3em;
+    padding-right: 10%;
+    font-size: 0.5em;
+    text-align: left;
+    padding-bottom: 19%;
+    padding-top: 1%;
+}
+
+input[type="checkbox"]{
+
+width: 4%;
+padding: 5%;
+height: 2em;
+padding-top: 10em;
+float: left;
+
+    
+}
+
+
+input[type="radio"]{
+
+  width: 4%;
+  padding: 6%;
+  height: 1.5em;
+  padding-top: 10em;
+  margin-top: 1.2%;
+  float: left;
+}
+    
+
+#kortetekst {
+    font-family: champagne;
+    font-size: 0.4em;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+
+
+}
+
+answer{
+font-size: 0.8em;
+
+}
+
+button{
+ font-family: champagne;
+font-size: 0.34em;
+
+
+
+}
+
+
+
+#deel0{
+  margin-top: 5%;
+  
+  
+
+}
+
+#deel0 .form{
+  margin-top: 5%;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+}
+
+#deel0 .uitleg{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+
+  
+}
+
+#deel0 .uitleg2{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+
+}
+
+
+#deel0 input[type="text"]{
+  width: 25%;
+  height: 3em;
+  padding-left: 0%;
+  padding-right: 0%;
+  font-size: 0.5em;
+  text-align: center;
+  margin-top: 0%;
+}
+
+
+
+#deel0 button{
+  margin-top: 3%;
+  font-family: champagne;
+ font-size: 0.8em;
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+ .block2{
+  margin-top: 10%;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 4em;
+    padding-left: 0%;
+    background-color: #636B2F;
+    width: 60%;
+    float: left;
+    font-family: medio;
+    padding-bottom: 10%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
 .faq_item {
+  border: 0px solid antiquewhite;
+  
+  border-radius: 0rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  cursor: pointer;
+  /* max-width: for small devices */
+  text-align: center;
+  float: left;
+  font-family: champagne;
+}
+
+.faq_title {
+  font-weight: normal;
+  font-size: 0.5em;
+  text-align: left;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_content {
+  font-weight: 100;
+  font-size: 0.35em;
+  color: antiquewhite;
+  transition: all 0.3s ease;
+  text-align: left;
+
+
+  
+}
+
+.question-text {
+  flex: 1; /* neemt alle beschikbare ruimte */
+  text-align: left;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+/* Verwijder standaard pijltje */
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Flex layout */
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PLUS standaard */
+
+/* MIN wanneer open */
+details[open] summary::after {
+  content: "−";
+}
+
+
+summary::after {
+  content: "+";
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #636B2F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  border: 1px antiquewhite solid;
+
+}
+
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+
+@keyframes animateUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+}
+
+details[open] p {
+  animation: animateDown 0.5s ease forwards;
+}
+
+
+
+
+
+
+/* =====================================================
+   RESPONSIVE (Desktop blijft exact zoals ontworpen)
+===================================================== */
+
+
+/* =========================
+   TABLET (iPad / ≤1024px)
+========================= */
+
+@media (max-width: 1024px) {
+#span3{
+  position: relative;
+  width: 100%;
+  float: left;
+}
+  /* Header gecentreerd */
+  .header {
+    width: 100%;
+    margin: -2.5%;
+    margin-bottom: 3%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  
+
+  /* Datum gecentreerd met goede spacing */
+  #datum {
+    float: none;
+    margin: 8vh auto -4vh auto;
+    text-align: center;
+  }
+
+  /* Titel iets hoger */
+  #titel {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  /* Blocks gecentreerd */
+  .block1,
+  .block2 {
+    width: 100%;
+    margin: 8vh auto;
+    text-align: center;
+  }
+
+  /* Form layout onder elkaar */
+  #deel1,
+  #deel2 {
+    width: 100%;
+    float: none;
+    margin-left: 0%;
+    text-align: center;
+  }
+
+  .form {
+    text-align: center;
+  }
+
+
+  .form2 {
+    text-align: center;
+  }
+
+  .form2 answer{
+   float: left;
+   padding-left: 2%;
+  
+  }
+
+  span{
+    margin-top: 1%;
+float: left;
+margin-left: 42.5%;
+width: 50%;
+  }
+
+  span2{
+    margin-top: 0.5%;
+float: left;
+margin-left: 45%;
+width: 55%;
+  }
+  
+  .uitleg {
+    text-align: center;
+    margin-left: 15%;
+
+  }
+
+  /* Inputs volledige breedte */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 40%;
+    height: 4em;
+    
+  }
+
+.form input[type="radio"]{
+    text-align: left;
+}
+
+input[type="radio"]{
+
   width: 2%;
   padding: 6%;
   height: 0.5em;
+  
+  padding-top: 10em;
+  margin-top: 1.2%;
+  float: left;
+}
+  /* FAQ correct schalen */
+  .faq_item {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  summary {
+    padding: 0 0px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+
+@media (max-width: 768px) {
+
+  #span3{
+    position: relative;
+    width: 100%;
+    float: left;
+  }
+  /* Datum iets groter */
+  #datum {
+    font-size: 5em;
+    margin-top: 5vh;
+  }
+
+  /* Extra balans tussen header / datum / titel */
+  #titel {
+    margin-top: 4vh;
+  }
+
+  /* RSVP tekst gecentreerd */
+  #kortetekst {
+    width: 90%;
+    margin: 2vh auto;
+    text-align: center;
+  }
+
+  /* FAQ meer ruimte + betere icon spacing */
+  .faq_item {
+    margin: 2.5rem 0;
+  }
+
+  summary {
+    padding: 0 15px;
+  }
+
+  summary::after {
+    margin-left: 10px;
+  }
+
+}
+
+ /* Header gecentreerd */
+ .header {
+  width: 100%;
+  margin: -2.5%;
+  margin-bottom: 3%;
+  display: inline-flex;
+
+  justify-content: center;
+}
+
+.header a{
+  font-size: 2em;
+
+}
+
+.header-right {
+  float: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Datum gecentreerd met goede spacing */
+#datum {
+  float: none;
+  margin: 8vh auto -4vh auto;
+  text-align: center;
+}
+
+/* Titel iets hoger */
+#titel {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+/* Blocks gecentreerd */
+.block1,
+.block2 {
+  width: 100%;
+  margin: 8vh auto;
+  text-align: center;
+  font-size: 5em;
+}
+
+/* Form layout onder elkaar */
+#deel1,
+#deel2 {
+  width: 100%;
+  float: none;
+  margin-left: 0%;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+
+.form2 {
+  text-align: center;
+}
+
+.form2 answer{
+ float: left;
+ padding-left: 2%;
+
+}
+
+span{
+  margin-top: 1%;
+float: left;
+margin-left: 42.5%;
+width: 50%;
+}
+
+span2{
+  margin-top: 0.5%;
+float: left;
+margin-left: 45%;
+width: 55%;
+}
+
+.uitleg {
+  text-align: center;
+  margin-left: 15%;
+
+}
+
+/* Inputs volledige breedte */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 40%;
+  height: 5em;
+  
+}
+
+.form input[type="radio"]{
+  width: 100%;
+  text-align: left;
+}
+/* FAQ correct schalen */
+input[type="radio"]{
+  width: 2%;
+  padding: 6%;
+  height: 0.5em;
+}
+
+summary {
+  padding: 0 0px;
+}
+
+
+
+
+
+
+/* FAQ correct schalen */
+.faq_item {
+  width: 70%;
+  margin-left: 15%;
 }
 
 summary {
