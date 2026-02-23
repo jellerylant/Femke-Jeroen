@@ -1596,7 +1596,7 @@ textarea {
 }
 
 .form input[type="radio"]{
-
+  width: 2%;
   text-align: left;
 }
 /* FAQ correct schalen */
