@@ -626,7 +626,6 @@ width: 55%;
   }
 
 .form input[type="radio"]{
-    width: 40%;
     text-align: left;
 }
 
@@ -635,6 +634,8 @@ input[type="radio"]{
   width: 2%;
   padding: 6%;
   height: 0.5em;
+  
+  padding-top: 10em;
   margin-top: 1.2%;
   float: left;
 }
@@ -798,8 +799,9 @@ textarea {
 }
 /* FAQ correct schalen */
 .faq_item {
-  width: 70%;
-  margin-left: 15%;
+  width: 2%;
+  padding: 6%;
+  height: 0.5em;
 }
 
 summary {
