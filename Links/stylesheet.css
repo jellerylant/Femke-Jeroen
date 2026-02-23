@@ -628,6 +628,7 @@ width: 55%;
 .form input[type="radio"]{
     width: 40%;
     text-align: left;
+  height: 0.75em;
 }
 
 input[type="radio"]{
