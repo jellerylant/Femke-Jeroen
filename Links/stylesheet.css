@@ -568,6 +568,15 @@ details[open] p {
 ========================= */
 
 @media (max-width: 1024px) {
+
+
+
+ .letter, .letter2{
+ margin-top: 17%;
+
+
+
+ } 
 #span3{
   position: relative;
   width: 100%;
@@ -579,12 +588,10 @@ details[open] p {
     margin: -2.5%;
     margin-bottom: 3%;
     text-align: center;
-    margin-left: 12%;
+    padding-left: 21%;
   
   }
-  .header a{
-
-  }
+ 
 
   
 
@@ -666,16 +673,24 @@ width: 55%;
     text-align: left;
 }
 
+
+
+
 input[type="radio"]{
 
-  width: 2%;
+  width: 4%;
   padding: 6%;
-  height: 0.5em;
-  
+  height: 1.5em;
   padding-top: 10em;
-  margin-top: 1.2%;
+  margin-top: 0.7%;
   float: left;
+  margin-left: -5%;
+  
 }
+
+
+
+
   /* FAQ correct schalen */
   .faq_item {
     width: 70%;
@@ -685,6 +700,11 @@ input[type="radio"]{
   summary {
     padding: 0 0px;
   }
+
+
+
+
+  
 
 }
 
@@ -735,10 +755,11 @@ input[type="radio"]{
 
  /* Header gecentreerd */
  .header {
-  width: 100%;
+  width: 92%;
   margin: -2.5%;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   display: inline-flex;
+  padding-left: 6%;
 
   justify-content: center;
 }
@@ -851,4 +872,35 @@ summary {
 summary {
   padding: 0 0px;
 }
+
+  .letter, .letter2{
+ opacity: 0;
+
+
+
+ } 
+
+#a1{
+  margin-top: 3%;
+}
+
+
+
+input[type="radio"]{
+
+  width: 4%;
+  padding: 6%;
+  height: 1.5em;
+  padding-top: 10em;
+  margin-top: 2%;
+  float: left;
+  margin-left: -12%;
+  
+}
+
+.form input[type="radio"]{
+    text-align: left;
+}
+
+
 }
