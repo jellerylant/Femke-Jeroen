@@ -510,6 +510,7 @@ summary {
 /* MIN wanneer open */
 details[open] summary::after {
   content: "−";
+  font-family: vogue;
 }
 
 
