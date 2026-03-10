@@ -766,7 +766,7 @@ text-align: center;
 }
 
 .header-right {
-  padding-left: 18%;
+  padding-left: 0%;
   float: left;
   display: flex;
   justify-content: center;
