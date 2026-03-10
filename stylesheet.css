@@ -280,16 +280,6 @@ input, textarea, select {
   font-size: 16px;
 }
 
-.form input[type="radio"],
-.form2 input[type="radio"] {
-  float: none;       /* float verwijderen */
-  display: inline-block; /* standaard inline gedrag */
-  width: auto;       /* breedte resetten */
-  height: auto;      /* hoogte resetten */
-  padding: 0;        /* padding resetten */
-  margin: 0.3em 0;   /* verticale spacing tussen opties */
-  vertical-align: middle; /* tekst en bolletje netjes uitlijnen */
-}
 
 input[type="text"]{
     width: 40%;
