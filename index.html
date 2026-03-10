@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Femke en Jeroen</title>
-<link rel="stylesheet" href="./Links/stylesheet.css">
+<link rel="stylesheet" href="/Links/stylesheet.css">
 
 </head>
 <body>
 <div>
-
+ <div id="span3">
   <div class="header">
   <div class="header-right">
     <a class="active" href="#RSVP"><div class="hover-underline">RSVP</div>
 </a>
     <a href="#FAQ"><div class="hover-underline">FAQ</div>
-</a>
+</a></div>
   </div>
   
  
@@ -24,8 +24,16 @@
 <div id="datum">12.09<br>2026</div>
 <div id="titel"><a>FEMKE</a> <div id="p1"><br><a>en</a></br></div> <a><a1>JEROEN</a1></a></div>
 
+<div class="letter"><img src="IMG/300ppi/Asset 1.png" alt="F"></div>
+
+
+
+
+
+
+
 <div class="block1" id="RSVP">
-- RSVP -
+<opa>De</opa> RSVP
 <br>
 <div id="kortetekst">Deze speciale dag zou niet compleet zijn zonder de mensen die we graag zien. We hopen je dan ook te mogen verwelkomen. Laat ons via deze RSVP vóór [datum] weten of je erbij kan zijn. 
 <br>
@@ -51,9 +59,9 @@
 <!--DAGFORMULIER-->
 
 
-
+<form name="Dag" netlify></form>
 <div id="dagForm" class="hidden">
-<form name="Dag" netlify>
+
   <div id="deel1">
 
     <div class="form">
@@ -77,7 +85,7 @@
     <label for="ben_je_aanwezig_op_de_ceremonie_1"><answer>Helaas niet</answer></label><br></span>
   </div>
   <div class="form2">
-    <label for="ben_je_aanwezig_op_de_avondfeest">Ben je aanwezig op de <i>avondfeest?</i></label><br>
+    <label for="ben_je_aanwezig_op_de_avondfeest">Ben je aanwezig op het <i>avondfeest?</i></label><br>
     <span><input type="radio" id="ben_je_aanwezig_op_de_avondfeest_0" name="avondfeest?" value="Ja">
     <label for="ben_je_aanwezig_op_de_avondfeest_0"><answer>Ja, met veel plezier</answer></label><br>
     <input type="radio" id="ben_je_aanwezig_op_de_avondfeest_1" name="avondfeest?" value="Nee">
@@ -87,6 +95,7 @@
  
 
 </div>
+
 
 <div id="deel2">
 
@@ -117,8 +126,77 @@
   
   <button type="submit">Verstuur</button>
 
-</form>
+
 </div>
+</form>
+
+
+
+
+<!--DGFORMULIER NPO-->
+
+  <div id="NPOdag" class="hidden">
+    <form name="Dag NPO" netlify>
+      <div id="deel1">
+  
+        <div class="form">
+          <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie volledige naam?
+            <div class="uitleg">Vul hieronder je naam in zoals die op de uitnodiging staat.
+            Staan jij en je partner samen op de uitnodiging? Vul dan beide namen in.
+            </div></label>
+          <input type="text" id="wat_is_jouw_volledige_naam" name="naam?" placeholder="Naam Voornaam" required>
+        </div>
+      
+      <div class="form">
+        <label for="wat_is_jouw_email_adres">Wat is jouw email-adres?</label><br>
+        <input type="email" id="wat_is_jouw_email_adres" name="email-adres?" placeholder="E-mail" required>
+      </div>
+      <div class="form2">
+        <label for="ben_je_aanwezig_op_de_ceremonie">Ben je aanwezig op de <i>ceremonie?</i></label><br>
+        <span><input type="radio" id="ben_je_aanwezig_op_de_ceremonie_0" name="ceremonie?" value="Ja">
+        <label for="ben_je_aanwezig_op_de_ceremonie_0"><answer>Ja, met veel plezier</answer></label><br>
+        <input type="radio" id="ben_je_aanwezig_op_de_ceremonie_1" name="ceremonie?" value="Nee">
+        <label for="ben_je_aanwezig_op_de_ceremonie_1"><answer>Helaas niet</answer></label><br></span>
+      </div>
+      
+    
+     
+    
+    </div>
+    
+    <div id="deel2">
+      <div class="form2">
+        <label for="ben_je_aanwezig_op_de_receptie">Ben je aanwezig op het <i>avondfeest?</i></label><br>
+        <span><input type="radio" id="ben_je_aanwezig_op_de_receptie_0" name="receptie?" value="Ja">
+        <label for="ben_je_aanwezig_op_de_receptie_0"><answer>Ja, met veel plezier</answer></label><br>
+        <input type="radio" id="ben_je_aanwezig_op_de_receptie_1" name="receptie?" value="Nee">
+        <label for="ben_je_aanwezig_op_de_receptie_1"><answer>Helaas niet</answer></label><br></span>
+      </div>
+  
+      <div class="form">
+        <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
+        <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+      </div>
+  
+  
+    
+      
+        
+        
+      <div class="form">
+        <label for="heb_je_nog_vragen_of_opmerkingen">Heb je nog vragen of opmerkingen? (Optioneel)</label><br>
+        <textarea id="heb_je_nog_vragen_of_opmerkingen" name="Opmerkingen?" placeholder="Opmerkingen?" ></textarea>
+      </div>
+    </div>
+      
+      <button type="submit">Verstuur</button>
+    
+    </form>
+    </div>
+  
+
+
+
 
 
 
@@ -196,8 +274,143 @@
   
   </form>
   </div>
+  
+  
+
+
+
+
+
+  <!--RECEPTIEFORM NPO-->
+
+<div id="NPOreceptie" class="hidden">
+  <form name="cermeonie+receptie NPO" netlify>
+    <div id="deel1">
+
+      <div class="form">
+        <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie volledige naam?
+          <div class="uitleg">Vul hieronder je naam in zoals die op de uitnodiging staat.
+          Staan jij en je partner samen op de uitnodiging? Vul dan beide namen in.
+          </div></label>
+        <input type="text" id="wat_is_jouw_volledige_naam" name="naam?" placeholder="Naam Voornaam" required>
+      </div>
+    
+    <div class="form">
+      <label for="wat_is_jouw_email_adres">Wat is jouw email-adres?</label><br>
+      <input type="email" id="wat_is_jouw_email_adres" name="email-adres?" placeholder="E-mail" required>
+    </div>
+    <div class="form2">
+      <label for="ben_je_aanwezig_op_de_ceremonie">Ben je aanwezig op de <i>ceremonie?</i></label><br>
+      <span><input type="radio" id="ben_je_aanwezig_op_de_ceremonie_0" name="ceremonie?" value="Ja">
+      <label for="ben_je_aanwezig_op_de_ceremonie_0"><answer>Ja, met veel plezier</answer></label><br>
+      <input type="radio" id="ben_je_aanwezig_op_de_ceremonie_1" name="ceremonie?" value="Nee">
+      <label for="ben_je_aanwezig_op_de_ceremonie_1"><answer>Helaas niet</answer></label><br></span>
+    </div>
+    
+  
+   
+  
+  </div>
+  
+  <div id="deel2">
+    <div class="form2">
+      <label for="ben_je_aanwezig_op_de_receptie">Ben je aanwezig op de <i>receptie?</i></label><br>
+      <span><input type="radio" id="ben_je_aanwezig_op_de_receptie_0" name="receptie?" value="Ja">
+      <label for="ben_je_aanwezig_op_de_receptie_0"><answer>Ja, met veel plezier</answer></label><br>
+      <input type="radio" id="ben_je_aanwezig_op_de_receptie_1" name="receptie?" value="Nee">
+      <label for="ben_je_aanwezig_op_de_receptie_1"><answer>Helaas niet</answer></label><br></span>
+    </div>
+
+    <div class="form">
+      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
+      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+    </div>
+
+
+  
+    
+      
+      
+    <div class="form">
+      <label for="heb_je_nog_vragen_of_opmerkingen">Heb je nog vragen of opmerkingen? (Optioneel)</label><br>
+      <textarea id="heb_je_nog_vragen_of_opmerkingen" name="Opmerkingen?" placeholder="Opmerkingen?" ></textarea>
+    </div>
+  </div>
+    
+    <button type="submit">Verstuur</button>
+  
+  </form>
   </div>
 
+
+
+
+
+
+
+
+
+<!--BURGERLIJKE-->
+
+<div id="burgerlijke" class="hidden">
+  <form name="burgerlijke" netlify>
+    <div id="deel1">
+
+      <div class="form">
+        <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie volledige naam?
+          <div class="uitleg">Vul hieronder je naam in zoals die op de uitnodiging staat.
+          Staan jij en je partner samen op de uitnodiging? Vul dan beide namen in.
+          </div></label>
+        <input type="text" id="wat_is_jouw_volledige_naam" name="naam?" placeholder="Naam Voornaam" required>
+      </div>
+    
+    <div class="form">
+      <label for="wat_is_jouw_email_adres">Wat is jouw email-adres?</label><br>
+      <input type="email" id="wat_is_jouw_email_adres" name="email-adres?" placeholder="E-mail" required>
+    </div>
+    <div class="form2">
+      <label for="ben_je_aanwezig_op_de_ceremonie">Ben je aanwezig op de <i>trouw?</i></label><br>
+      <span><input type="radio" id="ben_je_aanwezig_op_de_ceremonie_0" name="ceremonie?" value="Ja">
+      <label for="ben_je_aanwezig_op_de_ceremonie_0"><answer>Ja, met veel plezier</answer></label><br>
+      <input type="radio" id="ben_je_aanwezig_op_de_ceremonie_1" name="ceremonie?" value="Nee">
+      <label for="ben_je_aanwezig_op_de_ceremonie_1"><answer>Helaas niet</answer></label><br></span>
+    </div>
+    
+  
+   
+  
+  </div>
+  
+  <div id="deel2">
+    <div class="form2">
+      <label for="ben_je_aanwezig_op_de_receptie">Ben je aanwezig op de <i>lunch?</i></label><br>
+      <span><input type="radio" id="ben_je_aanwezig_op_de_receptie_0" name="receptie?" value="Ja">
+      <label for="ben_je_aanwezig_op_de_receptie_0"><answer>Ja, met veel plezier</answer></label><br>
+      <input type="radio" id="ben_je_aanwezig_op_de_receptie_1" name="receptie?" value="Nee">
+      <label for="ben_je_aanwezig_op_de_receptie_1"><answer>Helaas niet</answer></label><br></span>
+    </div>
+
+    <div class="form">
+      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
+      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+    </div>
+
+
+  
+    
+      
+      
+    <div class="form">
+      <label for="heb_je_nog_vragen_of_opmerkingen">Heb je nog vragen of opmerkingen? (Optioneel)</label><br>
+      <textarea id="heb_je_nog_vragen_of_opmerkingen" name="Opmerkingen?" placeholder="Opmerkingen?" ></textarea>
+    </div>
+  </div>
+    
+    <button type="submit">Verstuur</button>
+  
+  </form>
+  </div>
+</div>
 
 
 
@@ -214,7 +427,7 @@
 
 
 <div class="block2">
-<h1 class="faq_heading" id="FAQ"></h1> - FAQ -
+<h1 class="faq_heading" id="FAQ"></h1> <opa>De</opa> FAQ
 
 <section class="faqs">
   <!-- FAQ Item -->
@@ -248,6 +461,8 @@
 </section>
 </div>
 
+<div class="letter2"><img src="IMG/300ppi/Asset 2.png" alt="J"></div>
+
 
 
 
@@ -271,20 +486,35 @@
 const gasten = {
   "RYLANT2026": "dag",
   "BOSSUYT2026": "receptie",
-  "FAMILIEJANSSENS": "dag"
+  "JEROEN2026": "NPOreceptie",
+  "FEMKE2026": "NPOdag",
+  "BURGERLIJKE2026": "burgerlijke"
 };
 
 function checkCode() {
   const code = document.getElementById("codeInput").value.trim().toUpperCase();
 
-  document.getElementById("dagForm").classList.add("hidden");
+  document.getElementById("dagForm").classList.add("hidden"); 
   document.getElementById("receptieForm").classList.add("hidden");
+  document.getElementById("NPOreceptie").classList.add("hidden");
+  document.getElementById("NPOdag").classList.add("hidden");
+  document.getElementById("burgerlijke").classList.add("hidden");
+  
 
   if (gasten[code] === "dag") {
     document.getElementById("dagForm").classList.remove("hidden");
   } 
   else if (gasten[code] === "receptie") {
     document.getElementById("receptieForm").classList.remove("hidden");
+  } 
+  else if (gasten[code] === "NPOreceptie") {
+    document.getElementById("NPOreceptie").classList.remove("hidden");
+  } 
+  else if (gasten[code] === "NPOdag") {
+    document.getElementById("NPOdag").classList.remove("hidden");
+  } 
+  else if (gasten[code] === "burgerlijke") {
+    document.getElementById("burgerlijke").classList.remove("hidden");
   } 
   else {
     alert("Code niet gevonden.");
