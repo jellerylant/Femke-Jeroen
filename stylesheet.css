@@ -286,7 +286,7 @@ input[type="text"]{
     margin-top: 1%;
     height: 3em;
     padding-right: 10%;
-    font-size: 0.5em;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -295,7 +295,7 @@ input[type="email"]{
     margin-top: 2%;
     height: 3em;
     padding-right: 10%;
-    font-size: 0.5em;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -304,7 +304,7 @@ textarea{
     margin-top: 2%;
     height: 3em;
     padding-right: 10%;
-    font-size: 0.5em;
+    font-size: 16px;
     text-align: left;
     padding-bottom: 19%;
     padding-top: 1%;
@@ -391,7 +391,7 @@ justify-content: center;
   height: 3em;
   padding-left: 0%;
   padding-right: 0%;
-  font-size: 0.5em;
+  font-size: 16px;
   text-align: center;
   margin-top: 0%;
 }
@@ -756,7 +756,8 @@ input[type="radio"]{
 
  /* Header gecentreerd */
  .header {
-  width: 100%;
+  margin-left: 12.5%;
+  width: 75%;
   margin-bottom: 4%;
   padding-left: 0%;
 text-align: center;
