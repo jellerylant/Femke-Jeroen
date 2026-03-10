@@ -275,6 +275,12 @@ float: left;
 width: 40%;
 
 }
+
+input, textarea, select {
+  font-size: 16px;
+}
+
+
 input[type="text"]{
     width: 40%;
     margin-top: 1%;
@@ -316,15 +322,7 @@ float: left;
 }
 
 
-input[type="radio"]{
 
-  width: 4%;
-  padding: 6%;
-  height: 1.5em;
-  padding-top: 10em;
-  margin-top: 1.2%;
-  float: left;
-}
     
 
 #kortetekst {
@@ -574,7 +572,9 @@ details[open] p {
 
 @media (max-width: 1024px) {
 
-
+input, textarea, select {
+  font-size: 16px;
+}
 
  .letter, .letter2{
  margin-top: 17%;
@@ -934,9 +934,9 @@ input[type="radio"]{
   padding: 6%;
   height: 1.5em;
   padding-top: 1em;
-  margin-top: 2%;
+  
   float: left;
-  margin-left: -12%;
+  
   
 }
 
@@ -960,6 +960,8 @@ summary::after {
 
 }
 
-
+input, textarea, select {
+  font-size: 16px;
+}
 
 }
