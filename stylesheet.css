@@ -14,15 +14,15 @@ body {
 
 @font-face {
   font-family: vogue; /* set name */
-  src: url(Classyvogueregular.ttf); /* url of the font */
+  src: url(vogue.ttf); /* url of the font */
 }
 @font-face {
   font-family: holy; /* set name */
-  src: url(HolymoreDemo-8MynJ.otf); /* url of the font */
+  src: url(holy.otf); /* url of the font */
 }
 @font-face {
   font-family: symphony; /* set name */
-  src: url(symphony-pro-regular.otf) /* url of the font */
+  src: url(symphony.otf) /* url of the font */
 }
 @font-face {
   font-family: medio; /* set name */
@@ -31,7 +31,7 @@ body {
 
 @font-face {
   font-family: champagne; /* set name */
-  src: url(Champagne\ &\ Limousines.ttf); /* url of the font */
+  src: url(champagne.ttf); /* url of the font */
 }
 
 
@@ -180,7 +180,7 @@ position: absolute;
 width: 26%;
 margin-top: 37%;
 margin-left: 74%;
-rotate: ;
+
 }
 
 
