@@ -165,9 +165,36 @@ body {
     background-color: #636B2F;
     width: 100%;
     float: left;
-    font-family: medio;
     margin-top: 10%;
 }
+
+.letter img{
+position: absolute;
+width: 40%;
+margin-top: 41%;
+margin-left: -10%;
+}
+
+
+.letter2 img{
+position: absolute;
+width: 27%;
+margin-top: 45%;
+margin-left: 73%;
+rotate: ;
+}
+
+
+
+
+
+opa{
+font-family: symphony;
+
+
+}
+
+
   #quiz-container {
     width: 100%;
     float: left;
@@ -319,10 +346,14 @@ font-size: 0.8em;
 button{
  font-family: champagne;
 font-size: 0.34em;
+justify-content: center;
+
 
 
 
 }
+
+
 
 
 
@@ -395,7 +426,6 @@ font-size: 0.34em;
     background-color: #636B2F;
     width: 60%;
     float: left;
-    font-family: medio;
     padding-bottom: 10%;
     margin-left: 20%;
 }
@@ -765,6 +795,7 @@ input[type="radio"]{
   text-align: center;
 }
 
+
 .form2 answer{
  float: left;
  padding-left: 2%;
@@ -800,16 +831,7 @@ textarea {
   
 }
 
-.form input[type="radio"]{
-  width: 2%;
-  text-align: left;
-}
-/* FAQ correct schalen */
-input[type="radio"]{
-  width: 2%;
-  padding: 6%;
-  height: 0.5em;
-}
+
 
 summary {
   padding: 0 0px;
