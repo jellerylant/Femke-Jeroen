@@ -14,24 +14,24 @@ body {
 
 @font-face {
   font-family: vogue; /* set name */
-  src: url(/FONTS/Classyvogueregular.ttf); /* url of the font */
+  src: url(Classyvogueregular.ttf); /* url of the font */
 }
 @font-face {
   font-family: holy; /* set name */
-  src: url(/FONTS/HolymoreDemo-8MynJ.otf); /* url of the font */
+  src: url(HolymoreDemo-8MynJ.otf); /* url of the font */
 }
 @font-face {
   font-family: symphony; /* set name */
-  src: url(/FONTS/symphony-pro-regular.otf) /* url of the font */
+  src: url(symphony-pro-regular.otf) /* url of the font */
 }
 @font-face {
   font-family: medio; /* set name */
-  src: url(/FONTS/medio.otf); /* url of the font */
+  src: url(medio.otf); /* url of the font */
 }
 
 @font-face {
   font-family: champagne; /* set name */
-  src: url(/FONTS/Champagne\ &\ Limousines.ttf); /* url of the font */
+  src: url(Champagne\ &\ Limousines.ttf); /* url of the font */
 }
 
 
