@@ -184,7 +184,9 @@ left: 74%;
 }
 
 
-
+input, textarea {
+  font-family: champagne;
+}
 
 
 opa{
