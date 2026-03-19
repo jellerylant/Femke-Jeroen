@@ -52,7 +52,7 @@
 
 <div class="form">
 <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie uitnodigingscode?
-  <div class="uitleg2">Deze code vinden je op de uinodiging.</div></label>
+  <div class="uitleg2">Deze code vind je op de uitnodiging.</div></label>
 <input type="text" id="codeInput" placeholder="Code" required>
 <br>
 <button onclick="checkCode()">Verder</button></div>
@@ -63,16 +63,14 @@
 <!--DAGFORMULIER-->
 
 
-<form name="Dag" netlify></form>
+<form name="Dag" netlify>
 <div id="dagForm" class="hidden">
 
   <div id="deel1">
 
     <div class="form">
-      <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie volledige naam?
-        <div class="uitleg">Vul hieronder je naam in zoals die op de uitnodiging staat.
-        Staan jij en je partner samen op de uitnodiging? Vul dan beide namen in.
-        </div></label>
+      <label for="wat_is_jouw_volledige_naam">Wat is jouw volledige naam?
+        </label>
       <input type="text" id="wat_is_jouw_volledige_naam" name="naam?" placeholder="Naam Voornaam" required>
     </div>
   
@@ -89,7 +87,7 @@
     <label for="ben_je_aanwezig_op_de_ceremonie_1"><answer>Helaas niet</answer></label><br></span>
   </div>
   <div class="form2">
-    <label for="ben_je_aanwezig_op_de_avondfeest">Ben je aanwezig op het <i>avondfeest?</i></label><br>
+    <label for="ben_je_aanwezig_op_de_avondfeest">Ben je aanwezig op de <i>receptie & het feest?</i></label><br>
     <span><input type="radio" id="ben_je_aanwezig_op_de_avondfeest_0" name="avondfeest?" value="Ja">
     <label for="ben_je_aanwezig_op_de_avondfeest_0"><answer>Ja, met veel plezier</answer></label><br>
     <input type="radio" id="ben_je_aanwezig_op_de_avondfeest_1" name="avondfeest?" value="Nee">
@@ -104,13 +102,13 @@
 <div id="deel2">
 
   <div class="form">
-    <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
-    <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+    <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren? (Optioneel)</label><br>
+    <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?">
   </div>
 
   <div class="form2">
     
-    <label for="neem_jij_een_plus_one_mee">Neem jij een plus-one mee?
+    <label for="neem_jij_een_plus_one_mee">Zou jij graag een plus-one meenemen?
       <div class="uitleg">Heb je geen plus one op je uitnodiging staan, maar wil je toch graag iemand meebrengen? Laat het ons dan hier weten en dan bekijken we samen wat mogelijk is.</div>
     </label>
     <span2><input type="radio" id="neem_jij_een_plus_one_mee_0" name="plus-one?" value="Ja">
@@ -170,7 +168,7 @@
     
     <div id="deel2">
       <div class="form2">
-        <label for="ben_je_aanwezig_op_de_receptie">Ben je aanwezig op het <i>avondfeest?</i></label><br>
+        <label for="ben_je_aanwezig_op_de_receptie">Ben je aanwezig op de<i>receptie & het feest?</i></label><br>
         <span><input type="radio" id="ben_je_aanwezig_op_de_receptie_0" name="receptie?" value="Ja">
         <label for="ben_je_aanwezig_op_de_receptie_0"><answer>Ja, met veel plezier</answer></label><br>
         <input type="radio" id="ben_je_aanwezig_op_de_receptie_1" name="receptie?" value="Nee">
@@ -178,8 +176,8 @@
       </div>
   
       <div class="form">
-        <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
-        <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+        <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren? (Optioneel)</label><br>
+        <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?">
       </div>
   
   
@@ -216,10 +214,8 @@
     <div id="deel1">
 
       <div class="form">
-        <label for="wat_is_jouw_volledige_naam">Wat is jouw/jullie volledige naam?
-          <div class="uitleg">Vul hieronder je naam in zoals die op de uitnodiging staat.
-          Staan jij en je partner samen op de uitnodiging? Vul dan beide namen in.
-          </div></label>
+        <label for="wat_is_jouw_volledige_naam">Wat is jouw volledige naam?
+      </label>
         <input type="text" id="wat_is_jouw_volledige_naam" name="naam?" placeholder="Naam Voornaam" required>
       </div>
     
@@ -248,8 +244,8 @@
   
   <div id="deel2">
     <div class="form">
-      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
-      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren? (Optioneel)</label><br>
+      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?">
     </div>
 
 
@@ -326,8 +322,8 @@
     </div>
 
     <div class="form">
-      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
-      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren? (Optioneel)</label><br>
+      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?">
     </div>
 
 
@@ -395,8 +391,8 @@
     </div>
 
     <div class="form">
-      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren?</label><br>
-      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?" required>
+      <label for="heb_je_allergie_n_of_dieetvoorkeuren">Heb je allergieën of dieetvoorkeuren? (Optioneel)</label><br>
+      <input type="text" id="heb_je_allergie_n_of_dieetvoorkeuren" name="dieetvoorkeuren?" placeholder="Dieetvoorkeuren?">
     </div>
 
 
@@ -454,7 +450,7 @@
   
     <!-- FAQ Item -->
 <details class="faq_item">
-  <summary class="faq_title">De cadeau's</summary>
+  <summary class="faq_title">De cadeautips</summary>
   <p class="faq_content">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
 </details>
   <!-- END: FAQ Item -->
@@ -489,9 +485,9 @@
 
 const gasten = {
   "RYLANT2026": "dag",
-  "BOSSUYT2026": "receptie",
-  "JEROEN2026": "NPOreceptie",
-  "FEMKE2026": "NPOdag",
+  "RECEPTIE2026": "receptie",
+  "BOSSUYT2026": "NPOreceptie",
+  "BOSSUYTRYLANT": "NPOdag",
   "BURGERLIJKE2026": "burgerlijke"
 };
 
