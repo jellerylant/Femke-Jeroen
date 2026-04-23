@@ -1049,9 +1049,10 @@ input, textarea, select {
 
 
 a2{
-  margin-top: 10%;
+  margin-top: 20%;
+  padding-bottom: 5%;
   font-family: vogue;
-  font-size: 300%;
+  font-size: 265%;
 }
 
 }
