@@ -829,6 +829,10 @@ padding-bottom: 20%;
 
 /* Titel iets hoger */
 
+#block{
+  background-image: url(/IMG/FOTO6.jpg);
+
+}
 
 #titel {
   margin-top: 5vh;
@@ -864,6 +868,11 @@ padding-bottom: 2.5%;
 .block1{
 
   margin-top: 50%;
+}
+
+.block2{
+  padding-left: 4%;
+ padding-right: 4%;
 }
 /* Form layout onder elkaar */
 #deel1,
