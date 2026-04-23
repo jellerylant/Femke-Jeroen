@@ -158,6 +158,46 @@ a{
     font-size: 400%;
 }
 
+
+#titel2 {
+  
+  float: left;
+  width: 100%;
+position: relative;
+margin-top: 60%;
+color: antiquewhite;
+font-size: 2em; /* 300% → 3em */
+text-align: center; /* horizontaal centreren */
+margin-top: 15%; /* werkt bij block elementen */
+margin-bottom: 10%;
+font-family: champagne;
+
+}
+
+#fotoachtergrond{
+  background-image: url(/IMG/FOTO3.jpg);
+  background-size: cover;        /* vult volledig */
+  background-position: center;   /* mooi gecentreerd */
+  background-repeat: no-repeat;  /* geen herhaling */
+  min-height: 100vh;             /* volledige schermhoogte */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#klik{
+  font-size: 0.5em;
+  margin-top: 1%;
+}
+
+a2{
+  font-family: vogue;
+  font-size: 400%;
+}
+
+
+
+
 #block{
   background-image: url(/IMG/FOTO5.jpg);
   background-size: cover;        /* vult volledig */
