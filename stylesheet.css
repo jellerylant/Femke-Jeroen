@@ -12,6 +12,8 @@ body {
 
 
 
+
+
 @font-face {
   font-family: vogue; /* set name */
   src: url(vogue.ttf); /* url of the font */
@@ -63,7 +65,8 @@ float: left;
 
 
   /* Style the header with a grey background and some padding */
-.header {margin-top: 1.5%;
+.header {
+  margin-top: 4%;
     width: 100%;
   float: left;
   margin-left: 2.5%;
@@ -137,7 +140,12 @@ float: left;
   text-align: center; /* horizontaal centreren */
   line-height: 0.4; /* iets meer leesbaar */
   margin: 0 auto; /* werkt bij block elementen */
-  padding-bottom: 10%;
+  margin-bottom: 10%;
+  
+}
+
+#titel img{
+  width: 35%;
 }
 
 #p1{
@@ -150,7 +158,22 @@ a{
     font-size: 400%;
 }
 
+#block{
+  background-image: url(/IMG/FOTO5.jpg);
+  background-size: cover;        /* vult volledig */
+  background-position: center;   /* mooi gecentreerd */
+  background-repeat: no-repeat;  /* geen herhaling */
+  min-height: 100vh;             /* volledige schermhoogte */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
+  display: block;
+  overflow: hidden;
+  
+  
+
+}
 body {
     font-family: vogue;
     background: #636B2F;
@@ -170,7 +193,7 @@ body {
 .letter img{
 position: absolute;
 width: 40%;
-margin-top: 41%;
+margin-top: 5%;
 left: -10%;
 }
 
@@ -178,7 +201,7 @@ left: -10%;
 .letter2 img{
 position: absolute;
 width: 26%;
-margin-top: 37%;
+
 left: 74%;
 
 }
@@ -231,7 +254,7 @@ font-size: 0.7em;
 width: 70%;
 padding: 2%;
 padding-top: 1%;
-padding-left: 0%;
+padding-left: 2%;
 }
 .form{
     font-family: champagne;
@@ -591,6 +614,7 @@ input, textarea, select {
   .header {
     width: 100%;
     margin: -2.5%;
+    margin-top: 1%;
     margin-bottom: 3%;
     text-align: center;
     padding-left: 21%;
@@ -611,6 +635,9 @@ input, textarea, select {
   #titel {
     margin-top: 5vh;
     text-align: center;
+  }
+  #titel img{
+    width: 60%;
   }
 
   /* Blocks gecentreerd */
@@ -751,6 +778,9 @@ input[type="radio"]{
   }
 
 
+  #titel img{
+    width: 70%;
+  }
 
  /* Header gecentreerd */
  .header {
